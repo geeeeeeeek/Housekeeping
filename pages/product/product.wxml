@@ -1,0 +1,43 @@
+<view class="page">
+    <!--顶部图片区-->
+    <view class="page-header">   
+        <swiper> 
+            <swiper-item>
+                <image src="{{img800}}/{{product.p_icon}}" mode="aspectFill" class="swiper-image"  />
+            </swiper-item>   
+        </swiper>
+        <view class="header-info">
+            <text class="info-duration vc">{{product.p_duration}}分钟</text>
+            <text class="info-name vc">舒适按摩</text>
+            <view class="info-price vc">
+            线下价格：<text class="info-price-val">{{product.p_priceA}}元</text>
+            </view>
+        </view>
+    </view>
+    <!--中间name-->
+    <view class="page-title-wrap">
+        <view class="page-title fw-700">{{product.p_title}}</view>
+        <view><text class="page-title-price vc">{{product.p_priceA}}元</text></view>
+    </view>
+
+    <!--项目介绍-->
+    <view class="project-item cc"> 
+        <view class="project-label cc">
+            <text class="project-label-val cc fw-600">项目介绍</text>
+        </view>
+        <view class="project-val">{{product.p_introduce}}</view>
+    </view>
+
+    <!--适用人群-->
+    <view class="project-item cc"> 
+        <view class="project-label cc">
+            <text class="project-label-val cc fw-600">适用人群</text>
+        </view>
+        <view class="project-val">{{product.p_fit_people}}</view>
+    </view>
+
+    <!--预约-->
+    <view class="yuyue-wrap cc" bindtap="yuyueClick" data-id="{{product.p_id}}"> 
+        一键预约
+    </view>
+</view>

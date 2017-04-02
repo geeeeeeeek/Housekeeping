@@ -1,0 +1,43 @@
+<view class="page">
+
+
+    <!--一条-->
+    <block wx:for="{{books}}" wx:for-item="book">
+        <view class="list-item" >
+            <view class="list-item-top">
+                <view class="top-left">预约号：{{book.b_id}}</view>
+                <view class="top-right">￥{{book.b_price}}</view>
+            </view>
+            <view class="list-item-bottom">
+                <view class="list-item-left"> 
+                    <image class="list-item-left-icon" src="{{img220}}/{{book.p_icon}}"></image>
+                </view>
+                    <view class="list-item-right"> 
+                    <view class="item-name ">{{book.p_title}}</view> 
+                    <view class="item-time">预约时间：{{book.b_time}}</view> 
+                    <view class="item-operate ">
+                        <block wx:if="{{book.b_state==0}}">
+                            <button class="btn-cancel cc" hover-class="btn-cancel-selected" data-id="{{book.b_id}}" bindtap="showCancelDialog">取消</button>
+                        </block>
+                        <block wx:elif="{{book.b_state==1}}">
+                            <view class="item-tip">商家已应答</view>
+                        </block>
+                        <block wx:else>
+                            <view class="item-tip">已取消</view>
+                        </block>
+                        
+                    </view> 
+                </view>
+            </view>
+        </view>
+   </block>
+
+  
+    <block wx:if="{{books.length==0}}">
+        <view class="tip cc">
+        暂无预约
+        </view>
+    </block>
+   
+
+  </view>

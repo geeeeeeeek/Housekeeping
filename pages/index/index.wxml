@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="page">
+  <!--顶部滚动-->
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000"> 
+      <block wx:for="{{swiper}}" wx:for-item="swiper" wx:key="">
+        <swiper-item>
+          <image src="{{img800}}/{{swiper}}?version={{version}}" mode="aspectFill" class="swiper-image"  />
+        </swiper-item>  
+      </block> 
+  </swiper>
+
+  <!--筛选-->
+  <view class="choose-wrap vc">
+    <view class="choose-item cc" data-tab="1" bindtap="chooseItemClick">
+      <block wx:if="{{currentTab==1}}">
+        <text class="choose-item-label choose-item-selected" >全部</text>
+      </block>
+      <block wx:else>
+        <text class="choose-item-label" >全部</text>
+      </block>
+    </view>
+    <view class="choose-item-divider">|</view>
+    <view class="choose-item cc" data-tab="2" bindtap="chooseItemClick">
+      <block wx:if="{{currentTab==2}}">
+        <text class="choose-item-label choose-item-selected" >热门</text>
+      </block>
+      <block wx:else>
+        <text class="choose-item-label" >热门</text>
+      </block>
+    </view>
+    <view class="choose-item-divider">|</view>
+    <view class="choose-item cc" data-tab="3" bindtap="chooseItemClick">
+      <block wx:if="{{currentTab==3}}">
+        <text class="choose-item-label choose-item-selected">最新</text>
+      </block>
+      <block wx:else>
+        <text class="choose-item-label" >最新</text>
+      </block>
+    </view>
+  </view>
+
+  <!--listview数据--> 
+  <block wx:for="{{products}}" wx:for-item="product" wx:key="p_id">
+    <!--一条-->
+    <view class="list-item" data-id="{{product.p_id}}" bindtap="itemClick">
+      <view class="list-item-left"> 
+        <image class="list-item-left-icon" src="{{img220}}/{{product.p_icon}}?version={{version}}"></image>
+      </view>
+      <view class="list-item-right"> 
+        <view class="item-name cc">{{product.p_title}}</view>
+        <view class="item-desc cc">{{product.p_summary}}</view>
+        <view class="item-price cc ">￥{{product.p_priceA}}</view>
+        <view class="item-duration cc">{{product.p_duration}}分钟</view>
+      </view>
+    </view> 
+  </block>
+
+</view>

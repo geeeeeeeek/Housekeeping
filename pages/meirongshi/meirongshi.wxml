@@ -1,0 +1,24 @@
+
+<view class="page">
+    
+    <block wx:for="{{staffs}}" wx:for-item="staff" wx:key="s_id">
+        <view class="list-item">
+            <view class="list-item-left">
+                <image class="list-item-left-icon" src="{{img800}}/{{staff.s_icon}}?version={{version}}"></image>
+            </view>
+            <view class="list-item-right">
+                <view class="item-name">{{staff.s_name}}</view>
+                <view class="item-remark">
+                    手法：<text class="item-remark-val">10分</text> 
+                    礼仪：<text class="item-remark-val">10分</text> 
+                    知识：<text class="item-remark-val">10分</text>
+                </view>
+                <view class="item-intr">{{staff.s_introduce}}</view> 
+                <view class="item-yuyue">
+                    <button class="item-yuyue-btn cc" hover-class="btn-hover" data-id="{{staff.s_id}}" bindtap="yyClick">预约</button>
+                </view> 
+            </view>
+        </view>  
+    </block>
+
+</view>

@@ -1,0 +1,86 @@
+
+.page{
+    width:100%;
+    height: 100%;
+    background-color: #eaf1f0;
+   font-family:  "PingFang SC","Microsoft YaHei",Arial,sans-serif; 
+}
+
+/**每一条的**/
+.list-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 20rpx 0;
+}
+.list-item-top{
+    display: flex;
+    flex-direction: row;
+    margin: 0 30rpx;
+    padding:30rpx 0;
+    border-bottom: 2rpx #dbc5ba solid;
+}
+.top-left{
+    flex:1;
+    color:#dbc5ba;
+    font-size: 12px;
+}
+.top-right{ 
+    color:#f45e4e;
+    font-size: 12px;
+}
+
+.list-item-bottom{
+  display: flex;
+  flex-direction: row; 
+}
+
+.list-item-left-icon{
+  width:200rpx;
+  height:200rpx;
+  border-radius:100rpx;
+  margin: 30rpx;
+}
+
+.list-item-right{
+  flex:1;
+  margin: 30rpx 30rpx 30rpx 0rpx;
+}
+
+.item-name{
+  color:#632714;
+  font-size: 14px;
+  margin-bottom: 20rpx;
+}
+.item-desc{
+  color:#333;
+  font-size: 12px;
+  margin-bottom: 20rpx;
+}
+.item-time{
+  color:#ff62a7;
+  font-size: 12px;
+  margin-bottom: 20rpx;
+} 
+.item-tip{
+  color:#ff62a7;
+  font-size: 12px;
+}
+.item-operate{
+     /*border:1px #333 solid;*/
+}
+.btn-cancel{
+    width:200rpx;
+    color:#eee;
+    font-size: 14px;   
+    height: 58rpx;
+    margin-left: 2rpx;
+    background-color: #26a69a;
+}
+.btn-cancel-selected{
+    opacity: 0.6;
+}
+
+.tip{
+    height: 100%;
+}

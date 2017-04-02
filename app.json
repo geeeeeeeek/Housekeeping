@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/meirongshi/meirongshi",
+    "pages/order/orderAddress",
+    "pages/order/orderProducts",
+    "pages/product/product",
+    "pages/my/my",
+    "pages/myYuyue/myYuyue",
+    "pages/myAddress/myAddress"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f63440", 
+    "navigationBarTitleText": "家政预约",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#afaeae",
+    "selectedColor": "#f00",
+    "borderStyle": "black",
+    "backgroundColor": "#f0f0f0",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/index.png", 
+      "selectedIconPath": "images/index_selected.png",
+      "text": "服务列表"
+    }, 
+    {
+      "pagePath": "pages/my/my",
+      "iconPath": "images/me.png", 
+      "selectedIconPath": "images/me_selected.png",
+      "text": "个人中心"
+    }]
+  },
+  "debug":true
+}

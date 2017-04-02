@@ -1,0 +1,46 @@
+
+<view class="page">
+    <!--顶部图片区-->
+    <view class="page-header">   
+        <swiper> 
+            <swiper-item>
+                <image src="/images/my_header_bg.jpg" mode="aspectFill" class="swiper-image"  />
+            </swiper-item>   
+        </swiper>
+        <view class="header-info cc">
+             <image src="{{userInfo.avatarUrl}}" mode="scaleToFill" class="header-icon" />
+             <text class="info-name vc">{{userInfo.nickName}}</text> 
+        </view>
+    </view> 
+
+    <!--我的预约-->
+    <view class="page-item vc" bindtap="yuyueClick">
+        <view class="vc">
+            <image src="/images/icon_yuyue.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">我的预约</view>
+        <view class="vc">
+            <image src="/images/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view>
+    <!--我的地址-->
+    <view class="page-item vc" bindtap="addressClick">
+        <view class="vc">
+            <image src="/images/icon_address.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">我的地址</view>
+        <view class="vc">
+            <image src="/images/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view> 
+    <!--优惠券-->
+    <view class="page-item vc" bindtap="discountClick">
+        <view class="vc">
+            <image src="/images/icon_discount.png" mode="scaleToFill" class="p-icon" />
+        </view>
+        <view class="item-name">优惠券</view>
+        <view class="vc">
+            <image src="/images/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+        </view>
+    </view> 
+</view>

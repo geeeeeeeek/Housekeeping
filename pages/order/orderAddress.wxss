@@ -1,0 +1,90 @@
+page{
+    height: 100%;
+    background-color: #f4f4f4;
+}
+
+.page{ 
+    font-family: "PingFang SC","Microsoft Yahei",Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #f4f4f4;
+}
+.field-item{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom:1px #eaeaea solid;
+    background-color: #fff;
+}
+.field-item-2{
+    display: flex;
+    flex-direction: row; 
+    padding:0 10px;
+}
+.field-item-label{
+    flex:1;
+}
+.field-item-val{
+    flex:3;
+}
+
+.field-item-val-2{
+    flex: 1.5;
+}
+
+.val-2{  
+    padding: 10px 0;
+    border-bottom:1px #eaeaea solid;
+}
+
+
+.field-item-3{
+    display: flex;
+    flex-direction: row;  
+    padding:10px 10px;
+    border-bottom: 1px #eaeaea solid;
+}
+
+
+
+/**中间项目**/
+.pro-info{
+    margin: 30rpx 0;
+    border-top:1px #d6d6d6 solid;
+    border-bottom:1px #d6d6d6 solid;
+    background-color: #fff;
+}
+.info-item{
+    display: flex;
+    flex-direction: row;
+    padding:20rpx 30rpx;
+}
+.item-left{
+    flex:1;
+}
+.item-right{
+    display: flex;
+    flex-direction: row;
+}
+.item-right-val{
+    padding:12rpx;
+}
+
+.p-icon{
+    width:40rpx;
+    height: 40rpx;
+}
+
+/**底部按钮**/
+.footer{
+    margin: 20rpx 30rpx; 
+}
+.field-ok{ 
+    color:#eee;
+    font-size: 14px;    
+    height: 80rpx;
+    background-color: #e84445;
+}
+.field-ok-hover{
+    background-color: #e84445;
+    opacity: 0.7;
+}

@@ -1,0 +1,42 @@
+
+<form bindsubmit="formSubmit" >
+<view class="page">
+    
+    <!--客户信息-->
+    <view class="field-item vc">
+        <text class="field-item-label fw-700">姓名</text>
+        <view class="field-item-val"><input name="name" value="{{name}}" placeholder="请输入姓名"/></view>
+    </view>
+    <view class="field-item vc">
+        <text class="field-item-label fw-700">手机号码</text>
+        <view class="field-item-val"><input name="phone" value="{{phone}}" placeholder="您的手机号码"/></view>
+    </view>
+    <view class="field-item vc">
+        <text class="field-item-label fw-700">预约时间</text> 
+        <picker class="field-item-val-2  vc" name="date" mode="date" value="{{date}}" start="{{startDate}}" end="{{endDate}}"  bindchange="bindDateChange">
+            <view class="arrived-res vc">{{date}}</view>
+        </picker>
+        <picker class="field-item-val-2  vc" name="time" mode="time" value="{{time}}" start="{{startTime}}" end="{{endTime}}"  bindchange="bindTimeChange">
+            <view class="arrived-res vc">{{time}}</view>
+        </picker>
+    </view>
+
+    <!--预约项目-->
+    <view class="pro-info">
+        <view class="info-item">
+            <view class="item-left fw-700 vc">预约项目</view>
+            <view class="item-right" bindtap="pClick">
+                <text class="item-right-val">{{selectedInfo}}</text>
+                <view class="vc">
+                    <image src="/images/icon_rightgo.png" mode="scaleToFill" class="p-icon" />
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="footer">
+    <button formType="submit" class="field-ok fw-600 cc"  hover-class="field-ok-hover" >确 定</button>
+</view>
+
+</form>
