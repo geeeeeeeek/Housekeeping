@@ -7,8 +7,7 @@
             </swiper-item>   
         </swiper>
         <view class="header-info">
-            <text class="info-duration vc">{{product.p_duration}}分钟</text>
-            <text class="info-name vc">舒适按摩</text>
+            <text class="info-duration vc">{{product.p_duration}}分钟</text> 
             <view class="info-price vc">
             线下价格：<text class="info-price-val">{{product.p_priceA}}元</text>
             </view>
@@ -31,7 +30,7 @@
     <!--适用人群-->
     <view class="project-item cc"> 
         <view class="project-label cc">
-            <text class="project-label-val cc fw-600">适用人群</text>
+            <text class="project-label-val cc fw-600">适用场景</text>
         </view>
         <view class="project-val">{{product.p_fit_people}}</view>
     </view>

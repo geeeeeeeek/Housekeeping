@@ -1,5 +1,5 @@
-var appPath='https://www.wxfont.com';
-// var appPath='http://localhost';
+// var appPath='https://www.wxfont.com';
+var appPath='http://localhost';
 
 //图片资源
 var img220=appPath+'/upload/img_220';
@@ -33,5 +33,6 @@ module.exports = {
     api_get_all_book,
     api_cancel_one_book,
     
-    mid:'1'
+    // 后台用户名
+    mid:'100'
 }
