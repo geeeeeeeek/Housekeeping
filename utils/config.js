@@ -1,5 +1,5 @@
-// var appPath='https://www.wxfont.com';
-var appPath='http://localhost';
+var appPath='https://www.wxfont.com';
+// var appPath='http://localhost';
 
 //图片资源
 var img220=appPath+'/upload/img_220';
