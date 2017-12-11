@@ -63,7 +63,7 @@ Page({
     }else if(ct==2){
       this.chooseHot();
     }else if(ct==3){
-      this.chooseMode(2);
+      this.chooseRecent();
     }else if(ct==4){
       this.chooseMode(1);
     }
@@ -117,6 +117,16 @@ Page({
         });
         console.log("请求返回：==========="+res.data.products);
      })
+  },
+
+  chooseRecent:function(){
+    var that = this;
+    api.getRecentProductData(config.mid, function(res){
+      that.setData({
+        products: res.data.products
+      });
+      console.log("请求返回：===========" + res.data.products);
+    });
   },
 
   chooseMode:function(mode){

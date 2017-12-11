@@ -9,6 +9,7 @@ var img800=appPath+'/upload/img_800';
 var api_get_all_product=appPath+'/api/product/all';
 var api_get_hot_product=appPath+'/api/product/hot';
 var api_get_mode_product=appPath+'/api/product/mode';
+var api_get_recent_product=appPath+'/api/product/recent'
 var api_get_one_product=appPath+'/api/product/one';
 var api_get_all_staff=appPath+'/api/staff/all';
 var api_get_one_staff=appPath+'/api/staff/one';
@@ -24,6 +25,7 @@ module.exports = {
 
     api_get_all_product,
     api_get_hot_product,
+    api_get_recent_product,
     api_get_mode_product,
     api_get_one_product,
     api_get_all_staff,

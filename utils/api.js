@@ -90,6 +90,29 @@ function getHotProductData(mid,su,fa){
 
 
 /**
+ * 获取最近产品
+ */
+function getRecentProductData(mid, su, fa) {
+  util.showLoading();
+  var url = config.api_get_recent_product;
+  wx.request({
+    url: url,
+    method: 'GET',
+    data: {
+      mid: mid
+    },
+    success: su,
+    fail: function () {
+      util.showFailModal();
+    },
+    complete: function () {
+      util.hideLoading();
+    }
+  })
+}
+
+
+/**
  * 服务模式：上门，到店
  */
 function getModeProductData(mid,mode,su,fa){
@@ -251,6 +274,7 @@ module.exports={
     getSwiperData:getSwiperData,
     getProductData:getProductData,
     getHotProductData:getHotProductData,
+    getRecentProductData:getRecentProductData,
     getModeProductData:getModeProductData,
     getStaffList:getStaffList,
     getProductById:getProductById,
