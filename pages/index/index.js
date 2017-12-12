@@ -15,24 +15,25 @@ Page({
     products:[]
   }, 
 
-  onLoad: function () {
-    console.log('onLoad') 
+  onLoad: function (options) {
     var that = this
 
     this.init();
 
     this.chooseAll();
  
-  //swiper广告
+    //swiper广告
     this.getSwiper();
-     
+
+    // 处理跳转
+    this.handleNav(options);
   }, 
 
   onShareAppMessage:function(){
     return {
       title: '生活服务预约',
       desc: '预约小程序',
-      path: '/pages/index/index.js'
+      path: '/pages/index/index'
     }
   },
 
@@ -41,8 +42,20 @@ Page({
     this.setData({
       version:v
     })
+  },
 
-    
+  // 处理跳转
+  handleNav:function(options){
+    if (options.action) {
+      console.log("--->" + options.action); 
+      var action = options.action;
+      var id = options.id;
+      if(action == 'product'){
+        wx.navigateTo({
+          url: '../product/product?id=' + id
+        }) 
+      }
+    }
   },
  
 

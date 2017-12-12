@@ -12,7 +12,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#f63440", 
-    "navigationBarTitleText": "家政预约",
+    "navigationBarTitleText": "家政服务预约",
     "navigationBarTextStyle":"white"
   },
   "tabBar": {
@@ -33,5 +33,5 @@
       "text": "个人中心"
     }]
   },
-  "debug":true
+  "debug":false
 }
