@@ -3,7 +3,9 @@
     <view class="page-header">   
         <swiper> 
             <swiper-item>
-                <image src="{{img800}}/{{product.p_icon}}" mode="aspectFill" class="swiper-image"  />
+              <block wx:if="{{product.p_icon}}">
+                 <image src="{{img800}}/{{product.p_icon}}" mode="aspectFill" class="swiper-image"  /> 
+              </block>
             </swiper-item>   
         </swiper>
         <view class="header-info">
