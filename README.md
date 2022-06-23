@@ -15,7 +15,7 @@ https://github.com/geeeeeeeek/Housekeeping
 
 **个人页**
 
-![](https://github.com/geeeeeeeek/bt/blob/master/static/img/demo04.png)
+![](https://github.com/geeeeeeeek/Housekeeping/blob/master/images/demo04.png)
 
  
  #### 问题咨询
