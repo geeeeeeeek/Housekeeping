@@ -2,11 +2,12 @@
 <view class="page">
   <!--顶部滚动-->
   <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000"> 
-      <block wx:for="{{swiper}}" wx:for-item="swiper" wx:key="">
-        <swiper-item>
-          <image src="{{img800}}/{{swiper}}?version={{version}}" mode="aspectFill" class="swiper-image"  />
+    <swiper-item>
+          <image src="/images/demo01.png" mode="aspectFill" class="swiper-image"  />
         </swiper-item>  
-      </block> 
+      <swiper-item>
+          <image src="/images/demo02.png" mode="aspectFill" class="swiper-image"  />
+        </swiper-item>  
   </swiper>
 
   <!--筛选-->
@@ -40,19 +41,31 @@
   </view>
 
   <!--listview数据--> 
-  <block wx:for="{{products}}" wx:for-item="product" wx:key="p_id">
-    <!--一条-->
-    <view class="list-item" data-id="{{product.p_id}}" bindtap="itemClick">
+ 
+      <!--一条-->
+      <view class="list-item" data-id="{{product.p_id}}" bindtap="itemClick">
       <view class="list-item-left"> 
-        <image class="list-item-left-icon" src="{{img220}}/{{product.p_icon}}?version={{version}}"></image>
+        <image class="list-item-left-icon" src="/images/demo01.png"></image>
       </view>
       <view class="list-item-right"> 
-        <view class="item-name cc">{{product.p_title}}</view>
-        <view class="item-desc cc">{{product.p_summary}}</view>
-        <view class="item-price cc ">￥{{product.p_priceA}}</view>
-        <view class="item-duration cc">{{product.p_duration}}分钟</view>
+        <view class="item-name cc">刘老师</view>
+        <view class="item-desc cc">温柔可爱型</view>
+        <view class="item-price cc ">￥100</view>
+        <view class="item-duration cc">200分钟</view>
       </view>
     </view> 
-  </block>
+ 
+    <!--一条-->
+    <view class="list-item" data-id="{{product.p_id}}" bindtap="itemClick">
+    <view class="list-item-left"> 
+      <image class="list-item-left-icon" src="/images/demo02.png"></image>
+    </view>
+    <view class="list-item-right"> 
+      <view class="item-name cc">刘老师</view>
+      <view class="item-desc cc">温柔可爱型</view>
+      <view class="item-price cc ">￥100</view>
+      <view class="item-duration cc">200分钟</view>
+    </view>
+    </view> 
 
 </view>
