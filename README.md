@@ -1,24 +1,7 @@
-# Housekeeping
-微信小程序-家政预约 
+# 程序员副业赚钱教程
  
  
-#### 源码地址
-
-https://github.com/geeeeeeeek/Housekeeping
-
-#### 界面预览
-
-**首页展示** 
-
-![](https://github.com/geeeeeeeek/Housekeeping/blob/master/images/demo03.png)
+从网上总结了一些适合程序员的副业赚钱途径，分享给大家。
 
 
-**个人页**
-
-![](https://github.com/geeeeeeeek/Housekeeping/blob/master/images/demo04.png)
-
- 
- #### 问题咨询
-
- 微信: lengqin1024
-
+- []()
