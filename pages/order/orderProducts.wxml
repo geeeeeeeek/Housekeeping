@@ -1,7 +1,0 @@
-<view> 
-
-    <block wx:for="{{products}}" wx:for-item="product" wx:key="p_id">
-        <view class="field-item vc" data-id="{{product.p_id}}" bindtap="itemClick">{{product.p_title}}</view>
-    </block>
-
-</view>
