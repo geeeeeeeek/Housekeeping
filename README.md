@@ -12,6 +12,7 @@
 
 - [做副业网站，如何选择服务器](https://github.com/geeeeeeeek/side_pro/blob/master/docs/%E5%89%AF%E4%B8%9A%E7%BD%91%E7%AB%99%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 
+- [我用chatGPT生成的副业网站开始赚钱了]()
 
 
 
