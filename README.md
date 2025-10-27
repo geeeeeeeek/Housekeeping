@@ -16,6 +16,10 @@
 
 - [帮美国华人搭建电商网站半天赚了900元](https://youtu.be/naPc0WVY2gI?si=iNEFJxuI4W0pzy6J)
 
+- [使用搬瓦工vps搭建副业网站](https://youtu.be/tXeFDaRQwDc)
+
+- [我的第一个adsense副业网站](https://youtu.be/zSuEPMbgaNU)
+
 
 
 
