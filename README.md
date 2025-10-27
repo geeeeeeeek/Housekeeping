@@ -14,6 +14,8 @@
 
 - [我用chatGPT生成的副业网站开始赚钱了](https://github.com/geeeeeeeek/side_pro/blob/master/docs/%E6%88%91%E7%94%A8chatgpt%E7%94%9F%E6%88%90%E7%9A%84%E5%89%AF%E4%B8%9A%E7%BD%91%E7%AB%99.md)
 
+- [帮美国华人搭建电商网站半天赚了900元](https://youtu.be/naPc0WVY2gI?si=iNEFJxuI4W0pzy6J)
+
 
 
 
