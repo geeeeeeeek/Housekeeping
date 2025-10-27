@@ -20,6 +20,7 @@
 
 - [我的第一个adsense副业网站](https://youtu.be/zSuEPMbgaNU)
 
+- [程序员使用python分析股票赚钱](https://youtu.be/tfBh4YemsIQ)
 
 
 
