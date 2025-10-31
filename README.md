@@ -22,6 +22,8 @@
 
 - [程序员使用python分析股票赚钱](https://youtu.be/tfBh4YemsIQ)
 
+- [白嫖cloudflare搭建副业网站](https://youtu.be/UzOmcT1vzao?si=8Gofews1iciYFuF4)
+
 
 
 
